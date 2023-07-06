@@ -1,0 +1,14 @@
+{% extends 'shopapp/base.html' %}
+{% block title %}
+    Upload avatar
+{% endblock %}
+{% block body %}
+    <h1>Changing avatar</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">
+            Upload avatar
+        </button>
+    </form>
+{% endblock %}
