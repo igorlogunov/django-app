@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "23"
+version = "0.1.0"
+description = ""
+authors = ["igor <my-mail-tyt@yandex.ru>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "4.2"
+djangorestframework = "^3.14.0"
+django-filter = "^23.2"
+django-debug-toolbar = "^4.1.0"
+pillow = "^10.0.0"
+gunicorn = "^20.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
